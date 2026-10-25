@@ -3,24 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    
     
 <title>CHAOTIC SMASH | Página oficial</title>
    
 
 <style>
 
+    
+/* Importamos la fuente pixelada desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Dejamos la fuente normal para todo el texto común de la página */
 body {
-    font-family: 'Press Start 2P', monospace;
+    font-family: 'Poppins', sans-serif;
     background: #000000;
     color: white;
     overflow-x: hidden;
-    font-size: 14px; /* Las fuentes pixeladas se ven mejor un poco más chicas */
+}
+
+/* Aplicamos la fuente pixelada y un tamaño grande solo a los títulos principales y nombres */
+h1, h2, h3, .titulo {
+    font-family: 'Press Start 2P', monospace !important;
+    letter-spacing: 1px;
+}
+
+/* Ajustamos el tamaño específico para que el título principal resalte estilo arcade */
+.hero h1 {
+    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    line-height: 1.4;
+}
+
+/* Ajustamos los títulos de las tarjetas (como The L, Kuro, Zerr) */
+.card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Los párrafos y descripciones se quedan legibles con Poppins */
+p {
+    font-size: 1rem;
+    opacity: .9;
 }
     
     
